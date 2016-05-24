@@ -1,0 +1,15 @@
+<div class="container" class="newPoll">
+    <h1>Fill up and make a new Poll</h1>
+    <form>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" ng-model="titleInput" class="form-control"></input>
+        </div>
+        <div class="form-group">
+            <label for="options">Options:</label>
+            <textarea class="form-control" name="options" placeholder="seperated by new line" rows="10" cols="50" ng-model="optionsInput"></textarea>
+        </div>
+        <a class="btn btn-lg btn-primary" ng-click=submitPoll()>Make</a>
+    </form>
+    <p ng-show="showErr">please provide title and at least two options!!!</p>
+</div>

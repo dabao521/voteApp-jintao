@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Hi {{user.twitter.userName}}</h1>
+    <h3>here are all polls you own, you can click them and edit them. Have fun!</h3>
+    <div class="list-group">
+        <a ng-repeat="poll in polls" class="list-group-item" ui-sref="showPoll({pollId:poll.pollId})">
+            {{poll.pollTitle}}
+        </a>
+    </div>
+</div>

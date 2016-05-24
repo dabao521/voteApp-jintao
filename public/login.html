@@ -1,0 +1,30 @@
+<html ng-app="votingApp" ng-controller="mainController">
+    <head>
+        <title>Voting App</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">        
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>   
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/angular.chartjs/latest/angular-chart.css">    
+        <script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="/common/client.router.js"></script>
+        <script type="text/javascript" src="/controllers/client.index.js"></script>    
+        <script type="text/javascript" src="/controllers/client.navbar.js"></script>
+        <script type="text/javascript" src="/controllers/client.pollList.js"></script>
+        <link rel="stylesheet" href="/public/css/main.css">        
+    </head>
+        
+    <body data-target=".navbar">
+            <my-box>
+                <my-navbar login=false></my-navbar>
+                <div class="content">
+                    <ui-view>
+                    </ui-view>
+                </div>
+            </my-box>
+    </body>
+</html>
